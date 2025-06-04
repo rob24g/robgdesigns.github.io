@@ -1,0 +1,35 @@
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.0.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ * Hover.css Copyright Ian Lunn 2014. Generated with LESS.
+ */
+
+
+@import "_options";
+@import "_mixins";
+@import "_hacks";
+
+
+
+@import "effects/2d-transitions/_pop";
+& when(@includeClasses = true) {
+	.@{nameSpace}-pop {
+		.pop();
+	}
+}
+
+
+@import "effects/border-transitions/_underline-from-center";
+& when (@includeClasses = true) {
+	.@{nameSpace}-underline-from-center {
+		.underline-from-center();
+	}
+}
+
